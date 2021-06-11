@@ -62,9 +62,7 @@ def gen_simple_doc(root : xml.etree.ElementTree.Element) -> dict:
 def create_collection_sample_to_csv(dataset_root, save_path, max_collection_size):
     """
     Creates a sample of max_collection_size documents in a csv format.
-    Current version is not even a real sample as it generates docs in an orderly manner.
-    Not efficient at the moment as it first loads all the documents into memory 
-    and only then writes to csv using pandas.
+    Current version is not even a real sample as it generates saple in an orderly manner.
     
     Supported columns are defined in the function <gen_simple_doc>
     """
