@@ -36,11 +36,6 @@ op.add_option("-n",
               help="Specify the sample collection size")
 
 
-# dataset_root = "/nas/Datasets/trec_ct"
-# part = 'ClinicalTrials.2021-04-27.part1'
-# folder = "NCT0000xxxx/" # dependent on the 'part' folder i chose
-# file = os.path.join(dataset_root,part,folder,'NCT01607801.xml')
-
 def gen_simple_doc(root : xml.etree.ElementTree.Element) -> dict:
     """
     Columns that comprise a doc:
@@ -64,7 +59,6 @@ def gen_simple_doc(root : xml.etree.ElementTree.Element) -> dict:
     return doc
 
 
-# +
 def create_collection_sample_to_csv(dataset_root, save_path, max_collection_size):
     """
     Creates a sample of max_collection_size documents in a csv format.
@@ -120,8 +114,6 @@ def create_collection_sample_to_csv(dataset_root, save_path, max_collection_size
     save_file = os.path.join(save_path,f"{max_collection_size}.csv")
     df.to_csv(save_file,index=False)
     return True
-
-#create_collection_sample_to_csv(dataset_root,'data/5ksample.csv',5000)
 # +
 # script
 argv = sys.argv[1:]
@@ -131,7 +123,4 @@ output_folderpath = opts.output_folderpath
 dataset_root = opts.dataset_root
 max_collection_size = opts.max_sample_size
 create_collection_sample_to_csv(dataset_root,output_folderpath,max_collection_size)
-# -
-
-
 
