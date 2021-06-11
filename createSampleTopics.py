@@ -45,7 +45,7 @@ def topic2dict(topic : xml.etree.ElementTree.Element) -> dict:
     topicno = int(topic.attrib['number'])
     topic_text = topic.text
 
-    topic_dict = {'topicno':topicno,'text':topic_text}
+    topic_dict = {'patient_id':topicno,'text':topic_text}
 
     return topic_dict
 
@@ -73,7 +73,7 @@ def create_topic_sample_to_csv(topics_file, output_folder, max_size):
             break
 
         
-    output_file = os.path.join(output_folder,f"topics_{i}.csv")
+    output_file = os.path.join(output_folder,f"patients_{i}.csv")
     
     df = pd.DataFrame(parsed_topics)
     df.to_csv(output_file,index=False)
