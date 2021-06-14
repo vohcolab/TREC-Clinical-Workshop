@@ -47,7 +47,7 @@ patients.shape
 # Let's go easy
 
 
-Main obrjective: Match based on **gender** requirements
+Main objective: Match based on **gender** requirements
 <!-- #endregion -->
 
 ## Part 1: Divide and conquer
@@ -109,8 +109,4 @@ for patient in patients.itertuples(index=False):
             patient2trials[patient_id].append(trial)
             
     print(f'Patient {patient_id} is believed to be a {gender} and was attributed to {len(patient2trials[patient_id])} trials!')
-```
-
-```python
-clinical_trials.gender.value_counts()[['All','Female']].sum()
 ```
