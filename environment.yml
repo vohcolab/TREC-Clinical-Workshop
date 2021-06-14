@@ -1,4 +1,4 @@
-name: ct21
+name: workshop_21.6
 channels:
   - defaults
   - conda-forge
@@ -101,5 +101,5 @@ dependencies:
     - idna==2.10
     - requests==2.25.1
     - urllib3==1.26.5
-prefix: /home/sg.goncalves/.conda/envs/ct21
+prefix: /home/sg.goncalves/.conda/envs/workshop_21.6
 
