@@ -35,9 +35,8 @@ import xml
 topics_path = '/nas/Datasets/csiro_ct/topics-2014_2015-description.topics'
 topicsParser = TrecTopics()
 # note, for some reason tags have to be in lower_case for this to work. seems to be due to beautifulsoup
-topicsParser.read_topics_from_file(topics_path, topic_tag='top',numberid_tag='num',querytext_tag='title',number_attr=True)
+topicsParser.read_topics_from_file(topics_path, topic_tag='top',numberid_tag='num',querytext_tag='title',number_attr=False)
 patients = topicsParser.topics.copy()
-del patients[None] # bug from trectools
 ```
 
 ```python
@@ -95,13 +94,13 @@ data = [{'patientid':e[0],'description':e[1]} for e in list(patients.items())]
 df = pd.DataFrame(data).set_index('patientid')
 df.head(2)
 df.shape
-df.to_csv('data/patients_sample.csv')
+df.to_csv('../data/patients_sample.csv')
 ```
 
 # Save qrels data
 
 ```python
-qrels.drop(columns={'q0'}).to_csv('data/qrels_sample.csv',index=False)
+qrels.drop(columns={'q0'}).to_csv('../data/qrels_sample.csv',index=False)
 ```
 
 # Now onto the documents
@@ -157,5 +156,9 @@ collection.shape
 # Save the sample collection of documents
 
 ```python
-collection.to_csv('data/sample_collection.csv',index=False)
+collection.to_csv('../data/sample_collection.csv',index=False)
+```
+
+```python
+
 ```
