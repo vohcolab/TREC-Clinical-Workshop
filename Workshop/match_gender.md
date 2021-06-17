@@ -31,8 +31,13 @@ import pandas as pd
 # Data
 
 ```python
-clinical_trials = pd.read_csv('data/5ksample.csv')
-patients = pd.read_csv('patients_15.csv')
+!ls ../data
+```
+
+```python
+clinical_trials = pd.read_csv('../data/sample_collection.csv')
+patients = pd.read_csv('../data/patients_sample.csv')
+relevance = pd.read_csv('../data/qrels_sample.csv')
 ```
 
 ```python
@@ -81,16 +86,10 @@ def naive_man_detector(text):
 ```
 
 ```python
-patients['is_male'] = patients.text.apply(naive_man_detector)
+patients['is_male'] = patients.description.apply(naive_man_detector)
 ```
 
 Now that we can classify each patient in gender, lets assign patients to clinical trials
-
-```python
-for patient in patients.itertuples(index=False):
-    patient
-    break
-```
 
 ```python
 patient2trials = {}
@@ -98,7 +97,7 @@ patient2trials = {}
 for patient in patients.itertuples(index=False):
 
     patient_id = patient.patient_id
-    patient_description = patient.text
+    patient_description = patient.description
     gender = 'male' if patient.is_male == True else 'female'
     
     patient2trials[patient_id] = []
@@ -108,5 +107,5 @@ for patient in patients.itertuples(index=False):
         elif patient.is_male == False and trial.gender in ['All','Female']:
             patient2trials[patient_id].append(trial)
             
-    print(f'Patient {patient_id} is believed to be a {gender} and was attributed to {len(patient2trials[patient_id])} trials!')
+    print(f'Patient {patient_id} is believed to be a {gender} and was matched to {len(patient2trials[patient_id])} trials!')
 ```
