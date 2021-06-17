@@ -90,8 +90,8 @@ qrels.shape
 
 ```python
 # data in format acceptable to pandas
-data = [{'patientid':e[0],'description':e[1]} for e in list(patients.items())]
-df = pd.DataFrame(data).set_index('patientid')
+data = [{'patient_id':e[0],'description':e[1]} for e in list(patients.items())]
+df = pd.DataFrame(data).set_index('patient_id')
 df.head(2)
 df.shape
 df.to_csv('../data/patients_sample.csv')
