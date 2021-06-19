@@ -85,6 +85,8 @@ def naive_man_detector(text):
     return False
 ```
 
+^^aproveitar estes hard rules para explicar a vantagem de aplicar ML nisto
+
 ```python
 patients['is_male'] = patients.description.apply(naive_man_detector)
 ```
