@@ -15,6 +15,7 @@
 - [Part 1 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part1-Completed.ipynb)
 - [Part 2 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part2-Completed.ipynb)
 - [Part 3 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part3-Completed.ipynb)
+- [Part 4 Notebook (extra!)](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part4-Workshop%20(extra!).ipynb)
 
 
 ## Environment
