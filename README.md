@@ -3,9 +3,18 @@
 
 # Notebooks
 
-- [Part 1 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part1.ipynb)
-- [Part 2 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part2.ipynb)
-- [Part 3 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part3.ipynb)
+## Workshop
+
+- [Part 1 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part1-Workshop.ipynb)
+- [Part 2 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part2-Workshop.ipynb)
+- [Part 3 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part3-Workshop.ipynb)
+
+
+## Soluções
+
+- [Part 1 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part1-Completed.ipynb)
+- [Part 2 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part2-Completed.ipynb)
+- [Part 3 Notebook](https://colab.research.google.com/github/vohcolab/TREC-Clinical-Workshop/blob/main/Workshop/ClinicalTrialsMatching-Part3-Completed.ipynb)
 
 
 ## Environment
